@@ -332,7 +332,7 @@ span {
 }
 
 .hero-portrait-card {
-  min-height: 32rem;
+  min-height: 34rem;
   border-radius: 2.4rem;
   display: flex;
   align-items: center;
@@ -393,16 +393,16 @@ span {
 .portrait-stage {
   position: relative;
   width: 100%;
-  min-height: 32rem;
+  min-height: 34rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
-  padding: 1rem 1.4rem 0 0;
+  padding: 0 0.75rem 0 0;
 }
 
 .portrait-frame {
   position: relative;
-  width: min(28rem, 88%);
+  width: min(30.5rem, 94%);
   aspect-ratio: 1 / 1;
   padding: 1rem;
   border-radius: 999px;
@@ -411,6 +411,7 @@ span {
   box-shadow:
     0 24px 60px rgba(84, 126, 159, 0.22),
     0 0 0 16px rgba(255, 255, 255, 0.12);
+  transform: translateY(-1rem);
 }
 
 .portrait-photo-wrap {
@@ -855,7 +856,8 @@ span {
   }
 
   .portrait-frame {
-    width: min(19rem, 76vw);
+    width: min(21rem, 82vw);
+    transform: translateY(0);
   }
 
   .chatbot {
