@@ -266,13 +266,14 @@ export default function Home() {
         </div>
 
         <div className="project-grid project-grid-two">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <article className="project-card project-card-rich" key={project.title}>
               <div className="project-stars" />
               <div className="project-image-wrap">
                 <Image src={project.image} alt={project.imageAlt} fill className="project-image" sizes="(max-width: 980px) 100vw, 50vw" />
               </div>
               <div className="project-content">
+                <span className="project-number">{String(index + 1).padStart(2, '0')}</span>
                 <p className="project-subtitle">{project.subtitle}</p>
                 <h3>{project.title}</h3>
                 {project.statusLabel ? <span className="project-badge">{project.statusLabel}</span> : null}
@@ -358,8 +359,11 @@ export default function Home() {
           aria-expanded={isChatOpen}
           aria-controls="chatbot-panel"
         >
-          <span className="chatbot-avatar chatbot-avatar-small">
-            <Image src="/chatbot-mascot.png" alt="Chatbot mascot" fill className="chatbot-avatar-image" sizes="48px" />
+          <span className="chatbot-toggle-inner">
+            <span className="chatbot-avatar chatbot-avatar-small chatbot-avatar-launcher">
+              <Image src="/chatbot-mascot.png" alt="Chatbot mascot" fill className="chatbot-avatar-image" sizes="48px" />
+            </span>
+            <span className="chatbot-toggle-label">Ask Nafizur AI</span>
           </span>
         </button>
 
