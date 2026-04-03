@@ -125,7 +125,7 @@ const qas: QA[] = [
 ];
 
 export default function Home() {
-  const [isChatOpen, setIsChatOpen] = useState(true);
+  const [isChatOpen, setIsChatOpen] = useState(false);
   const [activeQuestion, setActiveQuestion] = useState(qas[0].question);
 
   const activeAnswer = useMemo(
@@ -354,14 +354,12 @@ export default function Home() {
         <button
           className="chatbot-toggle"
           onClick={() => setIsChatOpen((value) => !value)}
+          aria-label={isChatOpen ? 'Close interview assistant' : 'Open interview assistant'}
           aria-expanded={isChatOpen}
           aria-controls="chatbot-panel"
         >
-          <span className="chatbot-toggle-inner">
-            <span className="chatbot-avatar chatbot-avatar-small">
-              <Image src="/chatbot-mascot.png" alt="Chatbot mascot" fill className="chatbot-avatar-image" sizes="48px" />
-            </span>
-            <span>{isChatOpen ? 'Hide' : 'Open'} Interview Assistant</span>
+          <span className="chatbot-avatar chatbot-avatar-small">
+            <Image src="/chatbot-mascot.png" alt="Chatbot mascot" fill className="chatbot-avatar-image" sizes="48px" />
           </span>
         </button>
 
