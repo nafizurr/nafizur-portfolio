@@ -351,17 +351,17 @@ span {
 }
 
 .portrait-orbit-outer {
-  width: 26rem;
-  height: 26rem;
-  right: 4%;
-  top: 10%;
+  width: 29rem;
+  height: 29rem;
+  right: 2%;
+  top: 2%;
 }
 
 .portrait-orbit-inner {
-  width: 20rem;
-  height: 20rem;
-  right: 12%;
-  top: 20%;
+  width: 23rem;
+  height: 23rem;
+  right: 10%;
+  top: 12%;
   border-radius: 999px;
   opacity: 0.6;
   animation-direction: reverse;
@@ -375,19 +375,19 @@ span {
 }
 
 .portrait-glow-one {
-  width: 16rem;
-  height: 16rem;
+  width: 18rem;
+  height: 18rem;
   background: rgba(109, 227, 214, 0.22);
-  top: 12%;
-  right: 12%;
+  top: 4%;
+  right: 10%;
 }
 
 .portrait-glow-two {
-  width: 14rem;
-  height: 14rem;
+  width: 16rem;
+  height: 16rem;
   background: rgba(138, 194, 255, 0.24);
-  bottom: 18%;
-  right: 22%;
+  bottom: 12%;
+  right: 20%;
 }
 
 .portrait-stage {
@@ -395,14 +395,14 @@ span {
   width: 100%;
   min-height: 32rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
-  padding-right: 2rem;
+  padding: 1rem 1.4rem 0 0;
 }
 
 .portrait-frame {
   position: relative;
-  width: min(25rem, 78%);
+  width: min(28rem, 88%);
   aspect-ratio: 1 / 1;
   padding: 1rem;
   border-radius: 999px;
@@ -428,65 +428,8 @@ span {
 
 .portrait-photo {
   object-fit: cover;
-  object-position: center 32%;
-  transform: scale(1.08);
-}
-
-.portrait-floating {
-  position: absolute;
-  z-index: 3;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  border: 1px solid rgba(72, 132, 165, 0.14);
-  background: rgba(255, 255, 255, 0.74);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 18px 40px rgba(84, 126, 159, 0.14);
-}
-
-.portrait-floating-assistant {
-  right: 2%;
-  top: 18%;
-  padding: 0.5rem 0.85rem 0.5rem 0.5rem;
-  border-radius: 999px;
-  color: #2f4e67;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.portrait-floating-avatar {
-  position: relative;
-  width: 2.3rem;
-  height: 2.3rem;
-  border-radius: 999px;
-  overflow: hidden;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.96), rgba(203, 223, 255, 0.86));
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
-  flex-shrink: 0;
-}
-
-.portrait-floating-avatar-image {
-  object-fit: cover;
-  transform: scale(1.34) translateY(2%);
-}
-
-.portrait-floating-play {
-  right: 28%;
-  top: 44%;
-  width: 4.8rem;
-  height: 4.8rem;
-  justify-content: center;
-  border-radius: 999px;
-  padding: 0;
-}
-
-.portrait-play-triangle {
-  width: 0;
-  height: 0;
-  margin-left: 0.2rem;
-  border-top: 0.7rem solid transparent;
-  border-bottom: 0.7rem solid transparent;
-  border-left: 1.1rem solid #3b5870;
+  object-position: center 28%;
+  transform: scale(1.12);
 }
 
 .two-column,
@@ -865,24 +808,13 @@ span {
 
   .portrait-stage {
     justify-content: center;
+    align-items: center;
     padding-right: 0;
   }
 
   .portrait-orbit-outer,
-  .portrait-orbit-inner,
-  .portrait-floating-assistant,
-  .portrait-floating-play {
+  .portrait-orbit-inner {
     right: auto;
-  }
-
-  .portrait-floating-assistant {
-    left: 55%;
-    top: 10%;
-  }
-
-  .portrait-floating-play {
-    left: 20%;
-    top: 46%;
   }
 
   .section-heading {
@@ -924,20 +856,6 @@ span {
 
   .portrait-frame {
     width: min(19rem, 76vw);
-  }
-
-  .portrait-floating-assistant {
-    left: auto;
-    right: 2%;
-    top: 8%;
-    font-size: 0.82rem;
-  }
-
-  .portrait-floating-play {
-    left: 8%;
-    top: 48%;
-    width: 4.1rem;
-    height: 4.1rem;
   }
 
   .chatbot {

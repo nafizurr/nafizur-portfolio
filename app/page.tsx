@@ -213,15 +213,6 @@ export default function Home() {
           <div className="portrait-glow portrait-glow-two" />
           <div className="portrait-orbit portrait-orbit-outer" />
           <div className="portrait-orbit portrait-orbit-inner" />
-          <div className="portrait-floating portrait-floating-assistant">
-            <span className="portrait-floating-avatar">
-              <Image src="/chatbot-mascot.png" alt="Assistant icon" fill className="portrait-floating-avatar-image" sizes="42px" />
-            </span>
-            <span>Interview AI</span>
-          </div>
-          <button className="portrait-floating portrait-floating-play" type="button" aria-label="Play introduction preview">
-            <span className="portrait-play-triangle" />
-          </button>
           <div className="portrait-stage">
             <div className="portrait-frame">
               <div className="portrait-photo-wrap">
