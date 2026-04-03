@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Nafizur Rahman | CS Student',
   description:
     'Single-page portfolio for Nafizur Rahman, a computer science student building thoughtful AI-enabled workflows and scalable applications.',
+  metadataBase: new URL('https://nafizur-portfolio.vercel.app'),
   keywords: [
     'Nafizur Rahman',
     'computer science student',
