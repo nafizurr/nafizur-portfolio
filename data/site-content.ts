@@ -23,8 +23,8 @@ export const navigation = [
 
 export const profile = {
   name: 'Nafizur Rahman',
-  roleLine: 'CS Student · AI-Enabled Builder · Thoughtful Systems Designer',
-  heroTitle: 'Designing calm, capable software under a midnight sky.',
+  roleLine: 'CS Student · Software Engineer · AI Systems Builder',
+  heroTitle: 'Building software that is simple, reliable, and worth using.',
   heroDescription:
     'I build elegant digital experiences, AI-enabled workflows, and scalable applications with a focus on clarity, usefulness, and quiet craft.',
   aboutTitle: 'A computer science student building technology people can actually use.',
@@ -36,21 +36,26 @@ export const profile = {
   contactDescription:
     "If you're interested in internships, collaboration, or conversations about software and AI-enabled products, I'd love to connect.",
   email: 'nafizurr75@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/nafizur-rahman-603b01292',
+  linkedin: 'https://www.linkedin.com/in/nafizurr05',
   headshot: '/nafizur-headshot.png',
-  resumeFile: '/nafizur-rahman-resume.pdf',
+  resumeFile: '/nafizurr_resume.docx.pdf',
 };
 
 export const skills = [
-  'Next.js',
-  'React',
-  'TypeScript',
+  'TypeScript / JavaScript',
   'Python',
   'Java',
-  'AI Workflows',
-  'REST APIs',
-  'UI Design',
-  'Full-Stack Development',
+  'C',
+  'SQL',
+  'Next.js',
+  'React',
+  'Node.js',
+  'Tailwind CSS',
+  'PostgreSQL',
+  'Docker',
+  'AWS / GCP',
+  'Claude API',
+  'Gemini API',
 ];
 
 export const highlights = [
@@ -71,23 +76,33 @@ export const highlights = [
 export const projects: Project[] = [
   {
     title: 'Resumind',
-    subtitle: 'AI-assisted resume review and application tracking platform',
+    subtitle: 'AI/LLM-integrated ATS pipeline shipped to production',
     description:
-      'A polished web experience for tracking job applications and surfacing AI-powered feedback on resume quality, helping users stay organized while improving each submission.',
-    stack: ['Next.js', 'React', 'TypeScript', 'AI Feedback UX'],
+      'Shipped an AI-integrated ATS pipeline to production — automating resume parsing and role-specific feedback generation end-to-end. Built the full RESTful data flow between the React frontend and AI inference layer, managing async state, error boundaries, and response formatting across the stack.',
+    stack: ['React Router', 'TypeScript', 'Puter', 'Tailwind CSS'],
     image: '/resumind-showcase.png',
     imageAlt: 'Resumind project screenshot showing application tracking and resume ratings',
     liveUrl: 'https://puter.com/app/Resu-Mind',
   },
   {
     title: 'Travel Planner',
-    subtitle: 'Interactive travel journal with geographic exploration',
+    subtitle: 'Full-stack travel platform with dynamic itinerary and global data visualization',
     description:
-      'A visual travel planning experience that maps visited locations and turns trip history into something more personal, interactive, and easy to understand at a glance.',
-    stack: ['React', 'JavaScript', 'Maps', 'Interactive UI'],
+      'Built and launched a full-stack travel platform enabling dynamic itinerary creation and global data visualization. Back-end optimizations reduced database load time by 30%. Normalized a relational schema to handle complex nested travel data, balancing query performance with integrity across linked entities.',
+    stack: ['Next.js', 'Prisma', 'Neon', 'PostgreSQL', 'TypeScript'],
     image: '/travel-planner-showcase.png',
     imageAlt: 'Travel planner project screenshot showing a 3D globe and countries visited panel',
     statusLabel: 'Private Project',
+  },
+  {
+    title: 'Portfolio & AI Chatbot',
+    subtitle: 'Personal portfolio with an embedded interview-ready AI assistant',
+    description:
+      'A single-page portfolio built in Next.js to showcase projects, skills, and experience. Includes a custom AI chatbot — Night Desk Assistant — that answers recruiter questions with structured, interview-ready responses.',
+    stack: ['Next.js', 'TypeScript', 'Claude API', 'Vercel'],
+    image: '/chatbot-mascot.png',
+    imageAlt: 'Portfolio site screenshot showing the Night Desk Assistant chatbot demo',
+    liveUrl: 'https://nafizur-portfolio.vercel.app',
   },
 ];
 
@@ -100,7 +115,7 @@ export const interviewQas: QA[] = [
   {
     question: 'What projects stand out most?',
     answer:
-      'Resumind and Travel Planner are strong examples. Resumind shows product thinking around AI feedback and structured workflows, while Travel Planner shows a more visual, interactive side with spatial UI and user-friendly presentation.',
+      'Resumind, Travel Planner, and this portfolio itself are strong examples. Resumind shows product thinking around AI feedback and structured workflows. Travel Planner highlights interactive front-end and spatial UI work. The portfolio demonstrates full-stack execution with an embedded AI chatbot built on the Claude API.',
   },
   {
     question: 'What kind of engineer is he becoming?',
