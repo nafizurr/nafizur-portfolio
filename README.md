@@ -1,108 +1,85 @@
 # Nafizur Portfolio
 
-Single-page Next.js portfolio for Nafizur Rahman.
+A polished single-page portfolio website built with Next.js to showcase my projects, resume, technical interests, and design style through a responsive, product-inspired experience.
 
-## Run locally
+## Overview
 
-```bash
-npm install
-npm run dev
-```
+This portfolio was designed to feel more intentional than a standard personal website. Rather than building a simple static page, I wanted to create a portfolio that feels like a lightweight digital product: visually distinct, easy to navigate, and expressive of both my technical skills and design approach.
 
-## Build check
+The site features:
 
-```bash
-npm run build
-```
+- A custom night-sky inspired visual aesthetic
+- Responsive single-page layout
+- Project showcase section with custom screenshots
+- Resume preview and download support
+- Interactive interview-style chatbot with personalized Q&A
+- Centralized content structure for easy future updates
+- Headshot integration and branded portfolio presentation
 
-## Where to update content
+## Built With
 
-Most editable content now lives in:
+- Next.js
+- React
+- TypeScript
+- CSS
+- Vercel
 
-- `data/site-content.ts`
+## Features
 
-That file contains:
+### Custom Visual Direction
+The interface uses a calm, atmospheric visual style with soft lighting, subtle motion, and a clean editorial layout to make the portfolio feel more polished and memorable.
 
-- navigation links
-- hero copy
-- about text
-- skills
-- highlights
-- project cards
-- chatbot interview answers
-- contact links
+### Project Showcase
+Featured work is presented with project screenshots, summaries, and links where available, helping visitors quickly understand both the technical and product side of each project.
 
-## How to add a new project
+### Resume Integration
+The portfolio includes an embedded resume preview and a downloadable PDF for recruiters, hiring managers, or collaborators who want quick access to my experience.
 
-1. Add the project image to `public/`
-2. Open `data/site-content.ts`
-3. Add a new item to the `projects` array
+### Interactive Chatbot
+A floating assistant-style chatbot offers prewritten interview-ready responses about my background, projects, strengths, and technical interests. This was designed to make the portfolio feel more engaging and conversational.
 
-Project shape:
+### Easier Content Updates
+Content was structured so that major updates can be made without reworking layout code. Projects, text, chatbot answers, and profile details can be updated from a centralized content file.
 
-```ts
-{
-  title: 'Project Name',
-  subtitle: 'Short label',
-  description: 'What it does and why it matters.',
-  stack: ['Next.js', 'TypeScript'],
-  image: '/project-image.png',
-  imageAlt: 'Accessible description of the screenshot',
-  liveUrl: 'https://example.com',
-  statusLabel: 'Private Project'
-}
-```
+## Why I Built It
 
-Notes:
+I wanted a portfolio that reflects how I think about software: clean, useful, intentional, and visually thoughtful. This project gave me a chance to combine front-end engineering with interface design, branding, and product presentation in one place.
 
-- `liveUrl` is optional
-- `statusLabel` is optional
-- use `statusLabel: 'Private Project'` if you do not want to show a live link
+It also reflects the kind of work I enjoy most:
+- building polished interfaces
+- designing user-friendly workflows
+- creating software that feels clear and approachable
+- combining technical implementation with thoughtful UX decisions
 
-## How to change the headshot
+## What This Project Demonstrates
 
-Replace:
+- Front-end development with Next.js and React
+- Responsive layout design
+- UI/UX thinking
+- Personal branding through interface design
+- Maintainable content architecture
+- Product-minded presentation of technical work
 
-- `public/nafizur-headshot.png`
+## Live Site
 
-If you want to use a different filename, update `profile.headshot` in `data/site-content.ts`.
+[View Portfolio](https://nafizur-portfolio.vercel.app)
 
-## How to update the resume
+## Repository Structure
 
-Replace:
+- `app/` - main Next.js app files
+- `data/` - centralized editable portfolio content
+- `public/` - static assets such as project images, resume, and headshot
 
-- `public/nafizur-rahman-resume.pdf`
+## Future Improvements
 
-If the filename changes, update `profile.resumeFile` in `data/site-content.ts`.
+- Add more featured projects
+- Expand chatbot functionality into a live AI-powered assistant
+- Add more case-study depth for each project
+- Continue refining motion and presentation details
 
-## How to update chatbot answers
+## Author
 
-Open `data/site-content.ts` and edit the `interviewQas` array.
+Nafizur Rahman
 
-Each item looks like:
-
-```ts
-{
-  question: 'Tell me about Nafizur.',
-  answer: 'Short interview-ready response.'
-}
-```
-
-## Deploy
-
-The site is already linked to Vercel.
-
-To deploy manually:
-
-```bash
-npx vercel deploy --prod
-```
-
-## Suggested workflow for updates
-
-```bash
-git add .
-git commit -m "Update portfolio content"
-npm run build
-npx vercel deploy --prod
-```
+- LinkedIn: [linkedin.com/in/nafizur-rahman-603b01292](www.linkedin.com/in/nafizurr05)
+- Email: [nafizurr75@gmail.com](mailto:nafizurr75@gmail.com)
